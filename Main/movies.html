@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cinema Booking System</title>
+  <link rel="stylesheet" href="movies_style.css">
+</head>
+<body>
+  <div class="banner">
+    <p>Book Your Movies Here</p>
+  </div>
+  <div class="sidebar">
+    <h2>Navigation</h2>
+    <button onclick="navigateToIndex()">Home</button>
+  </div>
+  <div class="movie-showcase" id="app">
+    <h2>Movies Showcasing</h2>
+    <div class="movie-list">
+      <div class="movie-item">
+        <div class="image-container">
+          <img src="wonka_film_picture.jfif" alt="Movie 1 Image">
+        </div>
+        <div>
+          <h3>Wonka</h3>
+          <p>Family Movie</p>
+        </div>
+      </div>
+      <div class="movie-item">
+        <div class="image-container">
+          <img src="BeeKeeper.jpeg" alt="Movie 2 Image">
+        </div>
+        <div>
+          <h3>BeeKeeper</h3>
+          <p>Action Horror movie</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="/socket.io/socket.io.js"></script>
+  <script>
+    const socket = io();
+    // Naviagtion to Index
+    function navigateToIndex() {
+      window.location.href = '/';
+    }
+  </script>
+</body>
+</html>

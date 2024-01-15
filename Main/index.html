@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Booking</title>
+  <!-- Include a sample online CSS file -->
+  <link rel="stylesheet" href="index_style.css">
+</head>
+<body>
+  <div class="banner">
+    <p>Movie Booking Website</p>
+  </div>
+  <div class="sidebar">
+    <h2>Navigation</h2>
+    <button onclick="navigateToMovies()">Movies</button>
+    <button onclick="navigateToLogin()">Login</button>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script>
+    const socket = io();
+    // Allows Navigation to the movies page
+    function navigateToMovies() {
+      window.location.href = '/movies';
+    }
+    // Allows Navigation to the movies page
+    function navigateToLogin() {
+      window.location.href = '/login';
+    }
+  </script>
+</body>
+</html>

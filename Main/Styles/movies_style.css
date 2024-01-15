@@ -1,0 +1,70 @@
+.banner {
+    background-color: #3498db;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  /* Style for the sidebar */
+  .sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 200px;
+    background-color: #333;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+  }
+
+  /* Style for navigation buttons */
+  .navigation button {
+    display: block;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #555;
+    color: #fff;
+    border: none;
+    width: 100%;
+  }
+
+  /* Style for movie showcase content */
+  .movie-showcase {
+    margin-left: 220px;
+    padding: 20px;
+  }
+
+  .movie-item {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+  }
+
+  .movie-item .image-container {
+    flex: 0 0 200px; /* Fixed width for the image container */
+    margin-right: 20px;
+  }
+
+  .movie-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  /* Style for movie list */
+  .movie-list {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .movie-list li {
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: #f9f9f9;
+  }
